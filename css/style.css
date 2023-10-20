@@ -580,7 +580,7 @@ header hr {
   align-items: center;
   justify-content: space-evenly;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  row-gap: 1rem;
+  row-gap: 2rem;
   margin-top: 2.8rem;
   margin-bottom: 2.5rem;
 }
@@ -621,7 +621,7 @@ header hr {
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 0.35rem;
 }
 .featured-products .products-row .product .text h3 {
   color: #010944;
@@ -638,6 +638,44 @@ header hr {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+.featured-products .products-row .product .btn-grp {
+  display: flex;
+  margin-top: 0.9em;
+  gap: 0.6em;
+}
+.featured-products .products-row .product .btn-grp .cart {
+  display: flex;
+  align-items: center;
+  width: 8.625rem;
+  height: 3.0625rem;
+  border-radius: 0.3125rem;
+  border: 2px solid #4D73FF;
+  background: #FFF;
+  color: #4D73FF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.featured-products .products-row .product .btn-grp .buy {
+  display: flex;
+  padding: 0.84375rem 1.6875rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.3125rem;
+  background: #4D73FF;
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: none;
+  outline: none;
 }
 .featured-products .products-row .product:hover .image-card {
   background-color: #4D73FF;
