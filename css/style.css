@@ -190,6 +190,7 @@ header hr {
   display: flex;
   align-items: center;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url(/images/backgrounds/hero-bg.jpeg), lightgray 50%/cover no-repeat;
+  background-size: cover;
 }
 .hero-section .text {
   display: flex;
