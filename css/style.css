@@ -211,6 +211,70 @@ header hr {
   left: 0;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 25.625em;
+  background-color: #010944;
+}
+footer .main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr;
+  gap: 5em;
+}
+footer .main .col1 .contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+  margin-top: 1.2em;
+  margin-left: 1em;
+}
+footer .main .col1 .contact .call {
+  display: flex;
+  gap: 0.5em;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+footer .main .col1 .contact .maill {
+  display: flex;
+  gap: 0.5em;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+footer .main .col2 h1 {
+  color: #4D73FF;
+  font-family: Inter;
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 0.5em;
+}
+footer .main .col2 ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+footer .main .col2 ul a {
+  margin: 0;
+  text-decoration: none;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.1875rem; /* 218.75% */
+}
+
 .hero-section {
   z-index: -10;
   margin-top: 0px;
@@ -831,24 +895,4 @@ header hr {
   line-height: normal;
   display: flex;
   gap: 0.3em;
-}
-
-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 25.625em;
-  background-color: #010944;
-}
-footer .main {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 2fr;
-}
-footer .main .col1 {
-  height: 5em;
-  background-color: red;
-}
-footer .main .col2 {
-  background-color: green;
-  height: 5em;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,70 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 25.625em;
+    background-color: $dark-blue;
+    .main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 2fr;
+        gap: 5em;
+        .col1{
+            .contact{
+                display: flex;
+                flex-direction: column;
+                gap: 1.2em;
+                margin-top: 1.2em;
+                margin-left: 1em;
+                .call{
+                    display: flex;
+                    gap: 0.5em;
+
+                    color: #FFF;
+                    font-family: Inter;
+                    font-size: 1rem;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+                .maill{
+                    display: flex;
+                    gap: 0.5em;
+
+                    color: #FFF;
+                    font-family: Inter;
+                    font-size: 1rem;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+            }
+        }
+        .col2{
+            h1{
+                color: #4D73FF;
+                font-family: Inter;
+                font-size: 1.5625rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin-bottom: 0.5em;
+            }
+
+            ul{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                a{
+                    margin: 0;
+                    text-decoration: none;
+                    color: #FFF;
+                    font-family: Inter;
+                    font-size: 1rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 2.1875rem; /* 218.75% */
+                }
+            }
+        }
+    }
+}
