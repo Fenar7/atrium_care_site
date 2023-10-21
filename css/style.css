@@ -48,6 +48,16 @@ a {
     padding: 0px 10px;
   }
 }
+@media only screen and (min-width: 700px) {
+  .mobile {
+    display: none;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .desk {
+    display: none;
+  }
+}
 header {
   background: #FFF;
   position: relative;
@@ -282,6 +292,12 @@ header hr {
   height: 0.0625rem;
   margin: 0;
   left: 0;
+}
+header .hamburger svg {
+  margin-left: 0.5em;
+}
+header .hamburger svg path {
+  stroke: #777777;
 }
 
 footer {
