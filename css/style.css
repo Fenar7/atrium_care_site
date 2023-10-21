@@ -291,6 +291,13 @@ footer {
   height: 25.625em;
   background-color: #010944;
 }
+@media only screen and (max-width: 700px) {
+  footer {
+    align-items: center;
+    height: unset;
+    padding: 2em 0;
+  }
+}
 footer .main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 2fr;
@@ -299,6 +306,14 @@ footer .main {
 @media only screen and (max-width: 1100px) {
   footer .main {
     margin: 0;
+  }
+}
+@media only screen and (max-width: 700px) {
+  footer .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }
 footer .main .col1 .contact {
@@ -800,7 +815,7 @@ footer .main .col4 .sign-up-btn .sign-box form button:hover {
     height: 29rem;
   }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 700px) {
   .client-info {
     height: unset;
     padding-top: 2rem;
@@ -811,6 +826,11 @@ footer .main .col4 .sign-up-btn .sign-box form button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media only screen and (max-width: 700px) {
+  .client-info .content {
+    margin: 0;
+  }
 }
 .client-info .content h1 {
   color: #FFF;
@@ -823,6 +843,11 @@ footer .main .col4 .sign-up-btn .sign-box form button:hover {
 @media only screen and (max-width: 1100px) {
   .client-info .content h1 {
     font-size: 2.1rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .client-info .content h1 {
+    font-size: 1.5rem;
   }
 }
 .client-info .content p {
@@ -840,6 +865,12 @@ footer .main .col4 .sign-up-btn .sign-box form button:hover {
     font-size: 0.9rem;
   }
 }
+@media only screen and (max-width: 1100px) {
+  .client-info .content p {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+}
 .client-info .card-icons {
   display: flex;
   align-items: center;
@@ -847,9 +878,10 @@ footer .main .col4 .sign-up-btn .sign-box form button:hover {
   margin-top: 2.9375rem;
   gap: 6.25rem;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 700px) {
   .client-info .card-icons {
     flex-direction: column;
+    margin: 0;
   }
 }
 .client-info .card-icons .card {
@@ -857,6 +889,11 @@ footer .main .col4 .sign-up-btn .sign-box form button:hover {
   flex-direction: column;
   gap: 1rem;
   align-items: center;
+}
+@media only screen and (max-width: 700px) {
+  .client-info .card-icons .card img {
+    width: 70px;
+  }
 }
 .client-info .card-icons .card h1 {
   color: #4D73FF;
@@ -866,6 +903,11 @@ footer .main .col4 .sign-up-btn .sign-box form button:hover {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+@media only screen and (max-width: 700px) {
+  .client-info .card-icons .card h1 {
+    font-size: 2.1rem;
+  }
 }
 .client-info .card-icons .card p {
   color: #FFF;
@@ -877,6 +919,11 @@ footer .main .col4 .sign-up-btn .sign-box form button:hover {
   line-height: normal;
 }
 
+@media only screen and (max-width: 700px) {
+  .featured-products {
+    margin: 3em 0em;
+  }
+}
 .featured-products .head {
   display: flex;
   justify-content: space-between;
@@ -890,6 +937,11 @@ footer .main .col4 .sign-up-btn .sign-box form button:hover {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+@media only screen and (max-width: 700px) {
+  .featured-products .head .text {
+    font-size: 0.8rem;
+  }
 }
 .featured-products .head .nav-icons {
   display: flex;
@@ -1016,6 +1068,11 @@ footer .main .col4 .sign-up-btn .sign-box form button:hover {
   align-items: center;
   justify-content: center;
 }
+@media only screen and (max-width: 700px) {
+  .contact-us {
+    height: 70em;
+  }
+}
 .contact-us .form-container {
   overflow: hidden;
   position: absolute;
@@ -1025,11 +1082,24 @@ footer .main .col4 .sign-up-btn .sign-box form button:hover {
   width: 80vw;
   border-radius: 10px;
 }
+@media only screen and (max-width: 700px) {
+  .contact-us .form-container {
+    display: flex;
+    flex-direction: column;
+    height: unset;
+  }
+}
 .contact-us .form-container .message {
   display: flex;
   align-items: center;
   padding: 3em;
   background-color: #fff;
+}
+@media only screen and (max-width: 700px) {
+  .contact-us .form-container .message {
+    padding: 0.8em;
+    align-items: center;
+  }
 }
 .contact-us .form-container .message .form h1 {
   color: #010944;
@@ -1045,6 +1115,18 @@ footer .main .col4 .sign-up-btn .sign-box form button:hover {
     font-size: 1.8rem;
   }
 }
+@media only screen and (max-width: 700px) {
+  .contact-us .form-container .message .form h1 {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .contact-us .form-container .message .form form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 .contact-us .form-container .message .form form .input-row {
   max-width: 17em;
   display: flex;
@@ -1052,9 +1134,9 @@ footer .main .col4 .sign-up-btn .sign-box form button:hover {
   gap: 1rem;
   margin-bottom: 1rem;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 700px) {
   .contact-us .form-container .message .form form .input-row {
-    justify-content: center;
+    max-width: 5em;
   }
 }
 .contact-us .form-container .message .form form .input-group {
@@ -1082,9 +1164,9 @@ footer .main .col4 .sign-up-btn .sign-box form button:hover {
     width: 12em;
   }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 700px) {
   .contact-us .form-container .message .form form .input-group input {
-    width: 5rem;
+    width: 6.5rem;
   }
 }
 .contact-us .form-container .message .form form .email input {
@@ -1095,9 +1177,9 @@ footer .main .col4 .sign-up-btn .sign-box form button:hover {
     width: 25.5em;
   }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 700px) {
   .contact-us .form-container .message .form form .email input {
-    width: 15.5rem;
+    width: 14rem;
     padding: 1rem;
     height: 0.5rem;
   }
@@ -1111,9 +1193,9 @@ footer .main .col4 .sign-up-btn .sign-box form button:hover {
     width: 25.5em;
   }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 700px) {
   .contact-us .form-container .message .form form .message2 input {
-    width: 17rem;
+    width: 14rem;
     height: 7rem;
   }
 }
@@ -1152,6 +1234,12 @@ footer .main .col4 .sign-up-btn .sign-box form button:hover {
 @media only screen and (max-width: 1100px) {
   .contact-us .form-container .contact-info {
     padding: 3em;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .contact-us .form-container .contact-info {
+    padding: 0.8em;
+    align-items: center;
   }
 }
 .contact-us .form-container .contact-info h4 {
