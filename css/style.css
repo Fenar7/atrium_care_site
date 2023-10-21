@@ -274,6 +274,83 @@ footer .main .col2 ul a {
   font-weight: 700;
   line-height: 2.1875rem; /* 218.75% */
 }
+footer .main .col4 .sign-up-btn {
+  flex: 1;
+}
+@media only screen and (max-width: 800px) {
+  footer .main .col4 .sign-up-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem;
+    overflow: hidden;
+  }
+}
+footer .main .col4 .sign-up-btn h5 {
+  color: #FFF;
+  font-family: inherit;
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+@media only screen and (max-width: 800px) {
+  footer .main .col4 .sign-up-btn h5 {
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+footer .main .col4 .sign-up-btn .sign-box {
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 30rem;
+  border-bottom: 1px solid #777777;
+  display: inline-flex;
+  height: 3rem;
+  padding-left: 1rem;
+}
+@media only screen and (max-width: 800px) {
+  footer .main .col4 .sign-up-btn .sign-box {
+    max-width: 20rem;
+    margin-bottom: 2rem;
+  }
+}
+footer .main .col4 .sign-up-btn .sign-box form {
+  display: flex;
+  width: 30rem;
+}
+footer .main .col4 .sign-up-btn .sign-box form .sign-text-box {
+  color: #777777;
+  font-family: inherit;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 100%;
+  height: 100%;
+  max-width: 50rem;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+footer .main .col4 .sign-up-btn .sign-box form button {
+  display: inline-block;
+  font: inherit;
+  border: none;
+  outline: none;
+  display: flex;
+  height: 3rem;
+  padding: 1rem 1.75rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  background-color: #4D73FF;
+  color: #fff;
+  transition: all ease-out 0.2s;
+}
+footer .main .col4 .sign-up-btn .sign-box form button:hover {
+  cursor: pointer;
+}
 
 .hero-section {
   z-index: -10;
