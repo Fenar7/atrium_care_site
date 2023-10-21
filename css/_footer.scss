@@ -79,6 +79,13 @@ footer{
                     font-style: normal;
                     font-weight: 700;
                     line-height: 2.1875rem; /* 218.75% */
+
+                    transition: all 0.3s ease-out;
+                }
+
+                a:hover{
+                    color: $hover-blue;
+                    cursor: pointer;
                 }
             }
         }
@@ -157,8 +164,11 @@ footer{
                                     font-size: 0.8rem;
                                     padding: 0.6rem 1rem;
                             }
+                            transition: all 0.3s ease-out;
                     }
                     button:hover{
+                        background-color: $dark-blue;
+                        color: $hover-blue;
                         cursor: pointer;
                     }
                 }

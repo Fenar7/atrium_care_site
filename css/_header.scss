@@ -94,7 +94,17 @@ header{
             }
             @media only screen and (max-width: 700px){
                 display: none;
+            }
+            transition: all 0.3s ease-out;
         }
+        .register-login:hover{
+            color: $hover-blue;
+            cursor: pointer;
+            svg{
+                path{
+                    stroke: $hover-blue;
+                }
+            }
         }
     }
 
@@ -135,9 +145,15 @@ header{
                     font-style: normal;
                     font-weight: 500;
                     line-height: normal;
+                    transition: all 0.3s ease-out;
+                }
+                a:hover{
+                    color: $hover-blue;
                 }
             }
+            transition: all 0.3s ease-out;
         }
+
 
         .fn{
             display: flex;
@@ -186,6 +202,11 @@ header{
                     gap: 0.625rem;
                     background-color: $hover-blue;
                     color: #fff;
+                    transition: all 0.3s ease-out;
+                }
+                button:hover{
+                    cursor: pointer;
+                    background-color: $dark-blue;
                 }
             }
             .cart-icon{
@@ -216,7 +237,9 @@ header{
                 }
             }
             
-            
+            .search-icon:hover{
+                cursor: pointer;
+            }
         }
     }
 
@@ -239,3 +262,6 @@ header{
         }
     }
 }
+
+
+

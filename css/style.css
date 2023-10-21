@@ -36,6 +36,8 @@ p {
 
 a {
   text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -58,6 +60,14 @@ a {
     display: none;
   }
 }
+/* Reset default anchor styles */
+a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit the parent element's text color */
+  cursor: pointer; /* Change the cursor to a pointer on hover */
+  outline: none; /* Remove the default outline on focus (not recommended for accessibility) */
+}
+
 header {
   background: #FFF;
   position: relative;
@@ -153,6 +163,7 @@ header .top-section .register-login {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  transition: all 0.3s ease-out;
 }
 header .top-section .register-login img {
   width: 1.07813rem;
@@ -163,6 +174,13 @@ header .top-section .register-login img {
   header .top-section .register-login {
     display: none;
   }
+}
+header .top-section .register-login:hover {
+  color: #4D73FF;
+  cursor: pointer;
+}
+header .top-section .register-login:hover svg path {
+  stroke: #4D73FF;
 }
 header .bottom-section {
   height: 7.5em;
@@ -182,6 +200,9 @@ header .bottom-section {
   header .bottom-section .logo svg {
     width: 100px;
   }
+}
+header .bottom-section .navbar {
+  transition: all 0.3s ease-out;
 }
 header .bottom-section .navbar ul {
   list-style: none;
@@ -206,6 +227,10 @@ header .bottom-section .navbar ul a {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  transition: all 0.3s ease-out;
+}
+header .bottom-section .navbar ul a:hover {
+  color: #4D73FF;
 }
 header .bottom-section .fn {
   display: flex;
@@ -258,6 +283,11 @@ header .bottom-section .fn .search-box button {
   gap: 0.625rem;
   background-color: #4D73FF;
   color: #fff;
+  transition: all 0.3s ease-out;
+}
+header .bottom-section .fn .search-box button:hover {
+  cursor: pointer;
+  background-color: #010944;
 }
 header .bottom-section .fn .cart-icon {
   position: relative;
@@ -283,6 +313,9 @@ header .bottom-section .fn .cart-no p {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+header .bottom-section .fn .search-icon:hover {
+  cursor: pointer;
 }
 header hr {
   position: absolute;
@@ -382,6 +415,11 @@ footer .main .col2 ul a {
   font-style: normal;
   font-weight: 700;
   line-height: 2.1875rem; /* 218.75% */
+  transition: all 0.3s ease-out;
+}
+footer .main .col2 ul a:hover {
+  color: #4D73FF;
+  cursor: pointer;
 }
 footer .main .col4 .sign-up-btn {
   flex: 1;
@@ -462,6 +500,7 @@ footer .main .col4 .sign-up-btn .sign-box form button {
   background-color: #4D73FF;
   color: #fff;
   transition: all ease-out 0.2s;
+  transition: all 0.3s ease-out;
 }
 @media only screen and (max-width: 1100px) {
   footer .main .col4 .sign-up-btn .sign-box form button {
@@ -470,6 +509,8 @@ footer .main .col4 .sign-up-btn .sign-box form button {
   }
 }
 footer .main .col4 .sign-up-btn .sign-box form button:hover {
+  background-color: #010944;
+  color: #4D73FF;
   cursor: pointer;
 }
 
@@ -543,6 +584,11 @@ footer .main .col4 .sign-up-btn .sign-box form button:hover {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  transition: all 0.3s ease-out;
+}
+.hero-section .text button:hover {
+  cursor: pointer;
+  background-color: #010944;
 }
 @media only screen and (max-width: 700px) {
   .hero-section .text {
@@ -797,12 +843,21 @@ footer .main .col4 .sign-up-btn .sign-box form button:hover {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease-out;
 }
 @media only screen and (max-width: 1100px) {
   .about-us .content button {
     font-size: 1rem;
     padding: 0.8rem 2rem;
   }
+}
+.about-us .content button:hover {
+  cursor: pointer;
+  background-color: #4D73FF;
+  outline: none;
+  border: none;
 }
 
 .client-info {
@@ -1046,6 +1101,11 @@ footer .main .col4 .sign-up-btn .sign-box form button:hover {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  transition: all 0.3s ease-out;
+}
+.featured-products .products-row .product .btn-grp .cart:hover {
+  cursor: pointer;
+  scale: 105%;
 }
 .featured-products .products-row .product .btn-grp .buy {
   display: flex;
@@ -1063,8 +1123,16 @@ footer .main .col4 .sign-up-btn .sign-box form button:hover {
   line-height: normal;
   border: none;
   outline: none;
+  transition: all 0.3s ease-out;
 }
-.featured-products .products-row .product:hover .image-card {
+.featured-products .products-row .product .btn-grp .buy:hover {
+  cursor: pointer;
+  scale: 105%;
+}
+.featured-products .products-row .product .image-card {
+  transition: all 0.3s ease-out;
+}
+.featured-products .products-row .product .image-card:hover {
   background-color: #4D73FF;
 }
 
@@ -1225,12 +1293,16 @@ footer .main .col4 .sign-up-btn .sign-box form button:hover {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  transition: all 0.3s ease-out;
 }
 @media only screen and (max-width: 1100px) {
   .contact-us .form-container .message .form button {
     font-size: 0.8rem;
     padding: 0.8rem 1.8rem;
   }
+}
+.contact-us .form-container .message .form button:hover {
+  scale: 110%;
 }
 .contact-us .form-container .contact-info {
   background-color: #010944;
