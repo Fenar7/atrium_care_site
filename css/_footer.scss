@@ -167,9 +167,8 @@ footer{
                             transition: all 0.3s ease-out;
                     }
                     button:hover{
-                        background-color: $dark-blue;
-                        color: $hover-blue;
                         cursor: pointer;
+                        transform: translateX(10px);
                     }
                 }
                         
