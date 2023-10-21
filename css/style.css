@@ -116,10 +116,20 @@ header .bottom-section {
   align-items: center;
   justify-content: space-between;
 }
+@media only screen and (max-width: 1100px) {
+  header .bottom-section {
+    margin: 0;
+  }
+}
 header .bottom-section .navbar ul {
   list-style: none;
   display: flex;
   gap: 2rem;
+}
+@media only screen and (max-width: 1100px) {
+  header .bottom-section .navbar ul {
+    padding: 0;
+  }
 }
 header .bottom-section .navbar ul a {
   text-decoration: none;
@@ -143,6 +153,11 @@ header .bottom-section .fn .search-box {
   max-width: 17rem;
   margin-left: 0rem;
   padding-left: 1rem;
+}
+@media only screen and (max-width: 1100px) {
+  header .bottom-section .fn .search-box {
+    display: none;
+  }
 }
 header .bottom-section .fn .search-box form {
   display: flex;
@@ -310,6 +325,12 @@ footer .main .col4 .sign-up-btn .sign-box {
   padding-left: 1rem;
 }
 @media only screen and (max-width: 800px) {
+  footer .main .col4 .sign-up-btn .sign-box {
+    max-width: 20rem;
+    margin-bottom: 2rem;
+  }
+}
+@media only screen and (max-width: 1200px) {
   footer .main .col4 .sign-up-btn .sign-box {
     max-width: 20rem;
     margin-bottom: 2rem;
