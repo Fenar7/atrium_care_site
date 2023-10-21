@@ -653,3 +653,23 @@
         }
     }
 }
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 25.625em;
+    background-color: $dark-blue;
+    .main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 2fr;
+        .col1{
+            height: 5em;
+            background-color: red;
+        }
+        .col2{
+            background-color: green;
+            height: 5em;
+        }
+    }
+}

@@ -831,4 +831,24 @@ header hr {
   line-height: normal;
   display: flex;
   gap: 0.3em;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 25.625em;
+  background-color: #010944;
+}
+footer .main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr;
+}
+footer .main .col1 {
+  height: 5em;
+  background-color: red;
+}
+footer .main .col2 {
+  background-color: green;
+  height: 5em;
 }/*# sourceMappingURL=style.css.map */
