@@ -835,7 +835,7 @@ footer .main .col4 .sign-up-btn .sign-box form button:hover {
 }
 
 .about-us {
-  height: 60.625em;
+  height: 47.625em;
   background-image: url(/images/backgrounds/about-us-banner.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -844,7 +844,7 @@ footer .main .col4 .sign-up-btn .sign-box form button:hover {
 }
 @media only screen and (max-width: 1100px) {
   .about-us {
-    height: 50em;
+    height: 38em;
   }
 }
 .about-us .content {
@@ -1045,6 +1045,7 @@ footer .main .col4 .sign-up-btn .sign-box form button:hover {
   .client-info .card-icons {
     flex-direction: column;
     margin: 0;
+    gap: 3em;
   }
 }
 .client-info .card-icons .card {
@@ -1271,10 +1272,16 @@ footer .main .col4 .sign-up-btn .sign-box form button:hover {
   padding: 3em;
   background-color: #fff;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1100px) {
   .contact-us .form-container .message {
+    display: grid;
     padding: 2em 0.8em;
-    align-items: center;
+    place-items: center;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .contact-us .form-container .message {
+    display: flex;
   }
 }
 .contact-us .form-container .message .form h1 {
@@ -1420,6 +1427,7 @@ footer .main .col4 .sign-up-btn .sign-box form button:hover {
   .contact-us .form-container .contact-info {
     padding: 3em 0.8em;
     align-items: center;
+    gap: 2em;
   }
 }
 .contact-us .form-container .contact-info h4 {
@@ -1441,6 +1449,11 @@ footer .main .col4 .sign-up-btn .sign-box form button:hover {
   justify-content: center;
   gap: 5em;
   justify-content: center;
+}
+@media only screen and (max-width: 700px) {
+  .contact-us .form-container .contact-info .contact {
+    gap: 2em;
+  }
 }
 .contact-us .form-container .contact-info .contact .call {
   color: #FFF;
@@ -1503,6 +1516,6 @@ footer .main .col4 .sign-up-btn .sign-box form button:hover {
   transition: border ease-out 0.2s;
 }
 .search-box-container.active .search-field:focus {
-  border-bottom: 1px solid #010944;
+  border-bottom: 1px solid #4D73FF;
   outline: none;
 }/*# sourceMappingURL=style.css.map */
