@@ -1471,4 +1471,38 @@ footer .main .col4 .sign-up-btn .sign-box form button:hover {
   .contact-us .form-container .contact-info .contact .maill {
     font-size: 1rem;
   }
+}
+
+.search-box-container {
+  top: -500px;
+  transition: top 0.3s ease;
+}
+.search-box-container input {
+  display: none;
+}
+
+.search-box-container.active {
+  position: fixed;
+  top: 126px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  z-index: 80;
+  height: 100%;
+  width: 100vw;
+  background-color: white;
+}
+.search-box-container.active input {
+  display: block;
+}
+.search-box-container.active .search-field {
+  width: 85vw;
+  height: 3rem;
+  border: none;
+  border-bottom: 1px solid #777777;
+  transition: border ease-out 0.2s;
+}
+.search-box-container.active .search-field:focus {
+  border-bottom: 1px solid #010944;
+  outline: none;
 }/*# sourceMappingURL=style.css.map */
